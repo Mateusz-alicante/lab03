@@ -11,7 +11,7 @@ module part1 ( input logic [2:0] MuxSelect , input logic [6:0]
                 3'b100: Out = MuxIn[4];
                 3'b101: Out = MuxIn[5];
                 3'b110: Out = MuxIn[6];
-                3'b111: Out = MuxIn[7];
+                3'b111: Out = 1b'0;
             default: Out = 0;
             endcase
         end
